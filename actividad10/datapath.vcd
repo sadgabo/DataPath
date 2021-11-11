@@ -1,0 +1,221 @@
+$date
+	Wed Nov 10 02:08:52 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module datapath_tb $end
+$scope module DUV $end
+$var wire 1 ! TR_ZF $end
+$var wire 3 " c_AluOp [2:0] $end
+$var wire 32 # intTr [31:0] $end
+$var wire 3 $ c_sel [2:0] $end
+$var wire 32 % c_res [31:0] $end
+$var wire 1 & c_RegWrite $end
+$var wire 32 ' c_ReadData2 [31:0] $end
+$var wire 32 ( c_ReadData1 [31:0] $end
+$var wire 32 ) c_ReadData [31:0] $end
+$var wire 32 * c_R [31:0] $end
+$var wire 1 + c_MemToWrite $end
+$var wire 1 , c_MemToReg $end
+$var wire 1 - TR_zf $end
+$scope module AluC_1 $end
+$var wire 3 . AluOp [2:0] $end
+$var wire 6 / func [5:0] $end
+$var reg 3 0 sel [2:0] $end
+$upscope $end
+$scope module Alu_1 $end
+$var wire 3 1 sel [2:0] $end
+$var wire 32 2 op2 [31:0] $end
+$var wire 32 3 op1 [31:0] $end
+$var reg 32 4 res [31:0] $end
+$var reg 1 - zeroflag $end
+$upscope $end
+$scope module BR_1 $end
+$var wire 5 5 ReadRegister1 [4:0] $end
+$var wire 5 6 ReadRegister2 [4:0] $end
+$var wire 5 7 WriteRegister [4:0] $end
+$var wire 32 8 WriteData [31:0] $end
+$var wire 1 & RegEn $end
+$var reg 32 9 ReadData1 [31:0] $end
+$var reg 32 : ReadData2 [31:0] $end
+$upscope $end
+$scope module Mem_1 $end
+$var wire 32 ; Adress [31:0] $end
+$var wire 32 < WD [31:0] $end
+$var wire 1 + EWR $end
+$var reg 32 = ReadData [31:0] $end
+$upscope $end
+$scope module UC_1 $end
+$var wire 6 > op [5:0] $end
+$var reg 3 ? AluOp [2:0] $end
+$var reg 1 , MemToReg $end
+$var reg 1 + Memtowrite $end
+$var reg 1 & RegWrite $end
+$upscope $end
+$scope module mux21_1 $end
+$var wire 32 @ A [31:0] $end
+$var wire 32 A B [31:0] $end
+$var wire 1 , sel $end
+$var reg 32 B R [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module datapath_tb $end
+$var wire 1 ! TR_ZF $end
+$var reg 32 C intTr [31:0] $end
+$scope module DUV $end
+$scope module AluC_1 $end
+$upscope $end
+$scope module Alu_1 $end
+$upscope $end
+$scope module BR_1 $end
+$upscope $end
+$scope module Mem_1 $end
+$upscope $end
+$scope module UC_1 $end
+$upscope $end
+$scope module mux21_1 $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx C
+bx B
+bx A
+bx @
+bx ?
+bx >
+bx =
+bx <
+bx ;
+bx :
+bx 9
+bx 8
+bx 7
+bx 6
+bx 5
+bx 4
+bx 3
+bx 2
+bx 1
+bx 0
+bx /
+bz .
+x-
+x,
+x+
+bx *
+bx )
+bx (
+bx '
+x&
+bx %
+bx $
+bx #
+bz "
+z!
+$end
+#100000000000
+1&
+b111 ?
+0+
+0,
+b1100100 (
+b1100100 3
+b1100100 9
+b0 >
+b111 5
+b1010 6
+b1000 7
+b100000 /
+b111010100100000000100000 #
+b111010100100000000100000 C
+#200000000000
+bx (
+bx 3
+bx 9
+b10010 5
+b1001 7
+b10010010100100100000100000 #
+b10010010100100100000100000 C
+#300000000000
+b1101 (
+b1101 3
+b1101 9
+b10 5
+b1011 6
+b1010 7
+b100100 /
+b10010110101000000100100 #
+b10010110101000000100100 C
+#400000000000
+bx (
+bx 3
+bx 9
+b11111 5
+b11010 6
+b1011 7
+b11111110100101100000100100 #
+b11111110100101100000100100 C
+#500000000000
+b11110 5
+b10100 6
+b1100 7
+b100010 /
+b11110101000110000000100010 #
+b11110101000110000000100010 C
+#600000000000
+b1101 (
+b1101 3
+b1101 9
+b11 5
+b1111 6
+b1101 7
+b11011110110100000100010 #
+b11011110110100000100010 C
+#700000000000
+b1100100 '
+b1100100 2
+b1100100 :
+b1100100 <
+bx (
+bx 3
+bx 9
+b10001 5
+b111 6
+b1110 7
+b100101 /
+b10001001110111000000100101 #
+b10001001110111000000100101 C
+#800000000000
+bx '
+bx 2
+bx :
+bx <
+b10101 5
+b1011 6
+b1111 7
+b10101010110111100000100101 #
+b10101010110111100000100101 C
+#900000000000
+b10000 5
+b10100 6
+b10000 7
+b10000101001000000000100101 #
+b10000101001000000000100101 C
+#1000000000000
+b1101 '
+b1101 2
+b1101 :
+b1101 <
+b11101 5
+b10 6
+b10001 7
+b11101000101000100000100101 #
+b11101000101000100000100101 C
