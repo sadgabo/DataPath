@@ -1,5 +1,12 @@
 `timescale 1ns/1ns
-module Alu(input [2:0]sel, input [31:0]op1, input [31:0]op2, output reg zflag, output reg[31:0]Result);
+module Alu(
+    input [2:0]sel,
+    input [31:0]op1,
+    input [31:0]op2, 
+    output reg zflag, 
+    output reg[31:0]Result
+
+);
 always @*
 begin
       case (sel)
@@ -36,7 +43,7 @@ begin
 Result = op1^op2;
 end
     endcase
-if(Result==0)
+if(Result==1)
 begin
 zflag =1'b1;
 end

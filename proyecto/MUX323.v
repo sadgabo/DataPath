@@ -6,7 +6,7 @@ module MUX323(
 );
 always@*
 	begin 
-	if (select3)
+	if (select3)//llega un 0 
 	sal3=o5;
 	else 
 	sal3=1;

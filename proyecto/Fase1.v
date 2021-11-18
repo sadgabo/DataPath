@@ -54,9 +54,7 @@ wire c_and;
 
 
 
-
-
-assign c_and = c_branch & c_zflag;
+assign c_and = c_zflag & c_branch;
 
 mpc ins(
     .clk(inclk),
@@ -64,7 +62,7 @@ mpc ins(
     .inou(c_inou)
 );
 
-Sumador ins0(
+Sum ins0(
     .E(c_inou),
     .Sum(c_sum)
 );
@@ -91,6 +89,12 @@ Mem ins2(
     .dataout(c_dataout)
 );
 
+Alucontrol ins4(
+    .ins(c_instruc[5:0]),
+    .uc(c_alop),
+    .so(c_so)
+);
+
 Alu ins3(
     .sel(c_so),
     .op1(c_datolec1),
@@ -99,11 +103,7 @@ Alu ins3(
     .zflag(c_zflag)
 );
 
-Alucontrol ins4(
-    .ins(c_instruc[5:0]),
-    .uc(c_alop),
-    .so(c_so)
-);
+
 
 Unidad ins5(
     .op(c_instruc[31:26]),

@@ -11,6 +11,6 @@ instruccion={Sram[adr],Sram[adr+1],Sram[2],Sram[3]};
 end
 initial
 begin
-$readmemb("TestF1_memins.mem",Sram);
+$readmemb("TestF1_MemInst(1).mem",Sram);
 end
 endmodule
